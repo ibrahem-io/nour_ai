@@ -1,7 +1,7 @@
 import streamlit as st
 import openai
 
-openai.api_key = "sk-proj-nUkg3EyCCM5uwPaFbMPUT3BlbkFJ3BsTydyWsDqQl1o7iOiq"
+openai.api_key = "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"
 
 st.title("My Own ChatGPT!🤖")
 
