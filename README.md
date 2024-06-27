@@ -1,11 +1,11 @@
-# 📦 Streamlit App Starter Kit 
+# 📦 Nour AI  
 ```
-⬆️ (Replace above with your app's name)
+⬆️ AI for productive digital communities
 ```
 
 Description of the app ...
 
-## Demo App
+## Nour is your digital companion in your digital communities, a companion that can understand the context with less saying.
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://app-starter-kit.streamlit.app/)
 
