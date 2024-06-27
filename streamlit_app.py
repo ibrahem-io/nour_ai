@@ -1,11 +1,10 @@
-import langchain
 import streamlit as st
 import requests
-# chat_agent.py
-from langchain import LangChain, Chain
+from langchain.chains import LLMChain
 from langchain.llms import OpenAI
 
-class SimpleChatAgent(Chain):
+# chat_agent.py
+class SimpleChatAgent(LLMChain):
     def __init__(self):
         self.llm = OpenAI(api_key="sk-proj-1LH6p4ZoVbyGSjxrkww9T3BlbkFJN9V0YQU7FdzielolJ3vr")  # Replace with your OpenAI API key
 
@@ -14,7 +13,7 @@ class SimpleChatAgent(Chain):
         return response
 
 # Initialize LangChain
-lc = LangChain()
+lc = LLMChain()
 lc.add_chain("chat_agent", SimpleChatAgent())
 
 st.title("Simple Chat Agent")
@@ -35,4 +34,3 @@ def get_response(user_input):
 if user_input:
     response = run(user_input)
     response_placeholder.text(f"Chat Agent: {response}")
-
