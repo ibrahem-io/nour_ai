@@ -1,7 +1,7 @@
 import streamlit as st
 import openai
 
-openai.api_key = st.secrets["openai"]["api_key"]
+openai.api_key = st.sidebar.text_input('OpenAI API Key')
 
 st.title("My Own ChatGPT!🤖")
 
