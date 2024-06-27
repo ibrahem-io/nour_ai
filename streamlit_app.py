@@ -1,7 +1,12 @@
 import streamlit as st
 import openai
+import os
 
-openai.api_key = "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"
+from dotenv import load_dotenv
+
+load_dotenv()
+
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 st.title("My Own ChatGPT!🤖")
 
