@@ -6,7 +6,6 @@ st.title('🦜🔗 Quickstart App')
 openai_api_key = "sk-proj-1LH6p4ZoVbyGSjxrkww9T3BlbkFJN9V0YQU7FdzielolJ3vr"
 
 def generate_response(input_text):
-  self.llm = OpenAI()  # Replace with your OpenAI API key
   llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
   st.info(llm(input_text))
 
