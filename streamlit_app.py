@@ -1,7 +1,8 @@
+import langchain
 import streamlit as st
 import requests
 # chat_agent.py
-import LangChain, Chain, OpenAI from langchain
+from langchain import LangChain, Chain, OpenAI
 
 class SimpleChatAgent(Chain):
     def __init__(self):
